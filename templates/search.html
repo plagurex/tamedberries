@@ -1,0 +1,12 @@
+<div class="container">
+    <ul class="product-grid">
+        {{range .}}
+        <li class="product-card">
+            <a href="/product/{{.Id}}" class="product-link">
+                <img src="/static/img/{{.Img}}">
+                <p>{{.Name}}</p>
+            </a>
+        </li>
+        {{end}}
+    </ul>
+</div>

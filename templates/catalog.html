@@ -1,0 +1,7 @@
+<ul>
+    {{range .}}
+    <a href="/search?category={{.Id}}">
+        <li class="category-item">{{.Name}}</li>
+    </a>
+    {{end}}
+</ul>
